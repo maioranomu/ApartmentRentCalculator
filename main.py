@@ -66,7 +66,7 @@ except:
         if epoch == 40000:
             optimizer = optim.Adam(model.parameters(), lr=0.0001)
 
-        print(f"Epoch [{epoch + 1}/{epochs}] | Loss: [{loss.item():.4f}]")
+        #print(f"Epoch [{epoch + 1}/{epochs}] | Loss: [{loss.item():.4f}]")
         if (epoch + 1) % 500 == 0:
             print(f"Epoch [{epoch + 1}/{epochs}] | Loss: [{loss.item():.4f}]")
             if loss.item() <= 0.0001:
